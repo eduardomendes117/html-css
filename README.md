@@ -3,8 +3,8 @@
 
  acesse aqui os exercios:
 
-<a href=“https://eduardomendes117.github.io/html-css/exercicios/ex001/“>ex001</a>
-<a href=“https://eduardomendes117.github.io/html-css/exercicios/ex002/“>ex002</a>
-<a href=“https://eduardomendes117.github.io/html-css/exercicios/ex003/“>ex003</a>
-<a href=“https://eduardomendes117.github.io/html-css/exercicios/ex004/“>ex004</a>
-<a href=“https://eduardomendes117.github.io/html-css/exercicios/ex006/“>ex006</a>
+[ex001](https://eduardomendes117.github.io/html-css/exercicios/ex001/)
+[ex002](https://eduardomendes117.github.io/html-css/exercicios/ex002/
+[ex003](https://eduardomendes117.github.io/html-css/exercicios/ex003/)
+[ex004](https://eduardomendes117.github.io/html-css/exercicios/ex004/)
+[ex006](https://eduardomendes117.github.io/html-css/exercicios/ex006/)
