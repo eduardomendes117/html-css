@@ -19,5 +19,17 @@
         <source media="(max-width: 1030px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="foto grande">
     </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios</p>
+    <audio src="media/guanacast-33.mp3" controls autoplay></audio>
+
+    <p>Outra forma</p>
+    <audio preload="auto" autoplay controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <p>Erro ao reproduzir o audio</p>
+    </audio>
 </body>
 </html>
