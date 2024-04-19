@@ -1,4 +1,4 @@
-body {
+* {
     background-color: black;
     color: white;
     font-family: Arial;
@@ -12,7 +12,7 @@ h1 {
   font-size: 20px;
 }
 iframe {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -23,7 +23,7 @@ iframe {
   }
  
   ifame {
-    width: 100%;
+    width: 50%;
   }
 }
 
