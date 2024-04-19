@@ -12,7 +12,7 @@ h1 {
   font-size: 20px;
 }
 iframe {
-    height: 300px;
+    width: 100%;
   }
 }
 
@@ -21,9 +21,9 @@ iframe {
   h1 {
     font-size: 40px;
   }
-  
+ 
   ifame {
-    height: 300px;
+    width: 100%;
   }
 }
 
