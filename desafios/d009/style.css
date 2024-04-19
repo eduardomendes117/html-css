@@ -8,7 +8,7 @@
 
 div.video {
   position: relative;
-  margin: 0;
+  margin: auto;
   padding-bottom: 56.25%; /* proporção 16:9 (9/16 * 100) */
 }
 div.video iframe {
