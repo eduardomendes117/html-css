@@ -8,7 +8,7 @@
 
 div.video {
   position: relative;
-  margin: 10px -10px 10px -10px;
+  marin: 10px -10px 10px -10px;
   padding-bottom: 50%;
 }
 div.video > iframe {
