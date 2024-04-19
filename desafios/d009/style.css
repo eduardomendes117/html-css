@@ -1,7 +1,39 @@
-* {
+body {
     background-color: black;
     color: white;
     font-family: Arial;
     text-align: center;
     text-decoration: 0;
+}
+
+/* Media query para dispositivos com largura máxima de 600px (celulares) */
+@media screen and (max-width: 600px) {
+h1 {
+  font-size: 20px;
+}
+iframe {
+    height: 300px;
+  }
+}
+
+/* Media query para dispositivos com largura mínima de 601px e máxima de 1024px (tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  iframe {
+    height: 300px;
+  }
+}
+
+/* Media query para dispositivos com largura mínima de 1025px (computadores) */
+@media screen and (min-width: 1025px) {
+  h1 {
+    font-size: 60px;
+  }
+  
+  iframe {
+    height: 300px;
+  }
 }
