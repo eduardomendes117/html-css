@@ -8,13 +8,12 @@
 
 div.video {
   position: relative;
-  border: 5%;
-  padding-bottom: 56.25%; /* proporção 16:9 (9/16 * 100) */
+  padding-bottom: 50%;
 }
 div.video iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 106%;
-  height: 106%;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }
