@@ -5,3 +5,8 @@
     text-align: center;
     text-decoration: 0;
 }
+
+.img {
+    width: auto;
+    height: 100%;
+}
