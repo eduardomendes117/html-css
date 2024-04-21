@@ -11,8 +11,53 @@ img {
     top: 0;
     left: 0;
 }
+@media screen and (min-width: 0px) and (max-width: 319px) {
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 25px;
+    }
+    div.video {
+        position: relative;
+        padding-bottom: 50%;
+        overflow: hidden;
+    }
+    div.video > iframe {
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+        top: 5%;
+        left: 3%;
+        width: 94%;
+        height: 94%;
+    }
+}
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 25px;
+    }
+    div.video {
+        position: relative;
+        padding-bottom: 50%;
+        overflow: hidden;
+    }
+    div.video > iframe {
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+        top: 5%;
+        left: 3%;
+        width: 94%;
+        height: 94%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
     h1 {
         font-size: 40px;
     }
@@ -35,9 +80,9 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 767px){
     h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
     p {
         font-size: 25px;
@@ -52,42 +97,16 @@ img {
         margin: 0%;
         padding: 0%;
         top: 5%;
-        left: 3%;
-        width: 94%;
-        height: 94%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width:"799px") {
+@media screen and (min-width: 768px) and (max-width: 991px){
     h1 {
         font-size: 45px;
     }
-
-    p {
-        font-size: 30px;
-    }
-    div.video {
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 50%;
-        
-    }
-    div.video > iframe {
-        position: absolute;
-        margin: 0%;
-        padding: 0%;
-        top: 5%;
-        left: 10%;
-        width: 80%;
-        height: 100%;
-        
-    }
-}
-
-@media screen and (min-width: 800px) {
-    h1 {
-        font-size: 50px;
-    }
     p {
         font-size: 30px;
     }
@@ -103,13 +122,64 @@ img {
         top: 5%;
         left: 10%;
         width: 80%;
-        height: 90%;
+        height: 80%;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) and (max-width: 1199px){
     h1 {
         font-size: 60px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+    div.video {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 50%;
+    }
+    div.video > iframe {
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+        top: 10%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 50px;
+    }
+    div.video {
+        position: relative;
+        padding-bottom: 50%;
+        overflow: hidden;
+    }
+    div.video > iframe {
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 50px;
     }
 
     div.video {
@@ -123,7 +193,7 @@ img {
         margin-bottom: 20%;
         margin: 0%;
         padding: 0%;
-        top: 5%;
+        top: 10%;
         left: 15%;
         width: 70%;
         height: 80%;
