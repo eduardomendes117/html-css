@@ -10,7 +10,6 @@ body {
     background-color: #1D1D1D;
     text-align: center;
     margin: auto;
-    padding: 10px;
 }
 
 h1 {
@@ -30,4 +29,11 @@ a {
     font-size: 25px;
     color: white;
     text-decoration: none;
+}
+
+
+@media (max-width: 760px) {
+    iframe {
+        width: 100%;
+    }
 }
