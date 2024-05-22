@@ -86,7 +86,7 @@ nav a:hover {
 }
 
 h2 {
-    color: #5A7A07;
+    color: rgb(59, 218, 130, 0.8);
     font-weight: 800;
     border-radius: 20px;
     padding: 10px;
@@ -100,13 +100,13 @@ p {
 }
 
 p span {
-    color: #2FA866;
+    color: rgba(47, 168, 101, 0.7);
     font-weight: 700;
 }
 
 p a {
     font-weight: 600;
-    color: #5A7A07;
+    color: rgb(0, 255, 136);
 }
 
 p a:hover {
@@ -116,7 +116,7 @@ p a:hover {
 }
 
 .extra {
-    background-color: #C5EBD6;
+    background-color: #E8F5EF;
     border-radius: 24px;
     margin-top: 20px;
     padding-bottom: 1px;
