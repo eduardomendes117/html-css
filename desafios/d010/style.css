@@ -48,7 +48,7 @@ iframe {
 }
 
 .header {
-    background-color: rgb(61, 220, 132);
+    background-color: white;
     flex: 1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     font-weight: 800;
@@ -190,6 +190,7 @@ footer a:hover {
     .header img {
         display: block;
         float: left;
+        width: 50px;
     }
 
     #menu {
