@@ -48,7 +48,7 @@ iframe {
 }
 
 .header {
-    background-color: white;
+    background-color: #3BDA82;
     flex: 1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     font-weight: 800;
@@ -174,8 +174,8 @@ footer a:hover {
 }
 
 @media (max-width: 750px) {
-    .header h1, .header span {
-        display: none;
+    .header span {
+        margin: 20px;
     }
 
     .nav {
@@ -183,7 +183,7 @@ footer a:hover {
     }
 
     .header {
-        padding: 0 10px;
+        padding: 0;
         z-index: 2;
     }
 
@@ -195,9 +195,12 @@ footer a:hover {
 
     #menu {
         display: flex;
-        float: right;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        background-color: #2EA262;
         font-size: 50px;
+        margin: 0;
     }
 
     .nav.active {
