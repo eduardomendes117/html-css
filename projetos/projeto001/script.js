@@ -27,8 +27,8 @@ const colors = ['#FF5733', '#33FF57', '#3357FF', '#F0E68C', '#9400D3'];
         left: Math.random() * window.innerWidth + 'px',
         top: '-20px',
         backgroundColor: colors[Math.floor(Math.random() * colors.length)],
-        animationDuration: 2 + Math.random() * 3 + 's',
-        animationDelay: Math.random() * 5 + 's'
+        animationDuration: 10 + Math.random() * 10 + 's',
+        animationDelay: Math.random() * 210 + 's'
       });
 
       document.querySelector('.topo').appendChild(circle);
