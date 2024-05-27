@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link href="./input.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./theme-switcher.js"></script>
     <script src="./menu.js"></script>
     <script src="./scrol.js"></script>
@@ -12,6 +14,8 @@
     <title>Eduardo</title>
 </head>
 <body class="m-0 p-0 font-sans">
+
+    <!--Navegação-->
     <header id="navbar" class="flex h-16 justify-between items-cent px-5 z-10">
         <a class="flex items-center text-2xl font-bold" href='#'>
             <div class="bg-blue-800 w-7 h-7 rounded-full mr-1"></div>
@@ -72,10 +76,10 @@
         </label>
     </header>
 
-    <main class="overflow-y-auto">
-
-        <!--section01-->
-        <section id="home" class="flex items-center justify-center h-700">
+    <!--Conteúdo-->
+    <main>
+        <!--Tela Inicial-->
+        <section id="Home" class="flex items-center justify-center h-700">
             <div class="flex items-center justify-center flex-col">
                     <ul class="circles">
                             <li></li>
@@ -94,24 +98,76 @@
             </div>
         </section>
 
-        <!--section02-->
-        <section class="p-6 bg-slate-500">
-        <div class="card card-side bg-base-100 shadow-xl">
-        <div class="card card-side bg-base-100 shadow-xl ">
-            <figure class="w-52"><img src="" class="rounded-full md:hidden"/></figure>
-              <div class="card-body">
-              <h2 class="card-title text-4xl">Sobre Mim</h2>
-              <p class="text-2xl">Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Este é o lugar ideal para eu compartilhar um pouco do meu trabalho e minha jornada no mundo do desenvolvimento web.</p>
-              <div class="card-actions justify-end">
-                  <button class="btn btn-primary">Contato</button>
-                </div>
-              </div>
-          </div>
+         <!-- Sobre Section -->
+        <section id="Sobre" class="container p-10 transition-colors duration-300 bg-white shadow-md  mx-auto rounded-box" data-aos="zoom-in">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-purple-600" data-aos="fade-up" data-aos-easing="ease-in-sine">Sobre Mim</h2>
+            <p class="mt-4 text-black" data-aos="fade-up" data-aos-offset="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, esse placeat, labore eos illum quidem voluptatibus ea ipsam eius sint odit distinctio maiores vero fuga! Qui vero tempore cumque aspernatur?</p>
+            </div>
         </section>
-    </main>
+
+        <!-- Projetos Section -->
+        
+        <section id="Projeto" class="bg-slate-200 pb-8 rounded-box mt-2">
+            <h1 class="text-center text-5xl p-10 text-purple-800">Meus projetos</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-5">
+                <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="text-2xl font-bold mb-2">Projeto 1</h2>
+                    <p>Descrição do projeto 1.</p>
+                </div>
+                <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="text-2xl font-bold mb-2">Projeto 2</h2>
+                    <p>Descrição do projeto 2.</p>
+                </div>
+                <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="text-2xl font-bold mb-2">Projeto 3</h2>
+                    <p>Descrição do projeto 3.</p>
+                </div>
+                <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="400">
+                    <h2 class="text-2xl font-bold mb-2">Projeto 4</h2>
+                    <p>Descrição do projeto 4.</p>
+                </div>
+                <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="500">
+                    <h2 class="text-2xl font-bold mb-2">Projeto 5</h2>
+                    <p>Descrição do projeto 5.</p>
+                </div>
+                <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="600">
+                    <h2 class="text-2xl font-bold mb-2">Projeto 6</h2>
+                    <p>Descrição do projeto 6.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="container mx-auto px-4 py-20 transition-colors duration-300 bg-accent">
+            <div class="text-center">
+            <h2 class="text-3xl font-bold text-yellow-500">Contato</h2>
+            <p class="mt-4">Entre em contato...</p>
+            </div>
+            <div class="mt-10 max-w-lg mx-auto">
+            <form>
+                <div class="mb-4">
+                <label for="nome" class="block text-white">Nome</label>
+                <input type="text" id="nome" class="w-full px-4 py-2 border rounded-md" placeholder="Seu Nome">
+                </div>
+                <div class="mb-4">
+                <label for="email" class="block text-white">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-md" placeholder="Seu Email">
+                </div>
+                <div class="mb-4">
+                <label for="mensagem" class="block text-white">Mensagem</label>
+                <textarea id="mensagem" class="w-full px-4 py-2 border rounded-md" placeholder="Sua Mensagem"></textarea>
+                </div>
+                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Enviar</button>
+            </form>
+            </div>
+        </section>
+
+ </main>
 
     <footer class="footer footer-center p-10 bg-slate-800 text-primary-content">
-        <aside>
+        <aside class="dark:text-white">
           <a><img src="../favicon.ico" width="50px"></a>
           <p class="font-bold">
            Edudev Ltd.
@@ -126,5 +182,16 @@
           </div>
         </nav>
     </footer>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    duration: 1000,  // duração em milissegundos
+    once: true,      // se a animação deve ocorrer apenas uma vez
+    mirror: false,   // se a animação deve ocorrer ao rolar para cima e para baixo
+    easing: 'ease-in-out', // tipo de easing
+  });
+});
+</script>
 </body>
 </html>
