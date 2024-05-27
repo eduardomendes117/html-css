@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/*testes*/
+.typing-container {
+    display: inline-flex;
+    overflow: hidden;
+    border-right: .10em solid white;
+    white-space: nowrap;
+    font-family: sans-serif;
+    animation: typing 10s linear infinite, blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    25% { width: 0; }
+    50% { width: 100%;}
+    75% { width: 0; }
+    100% { width: 100% ;}
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+
 .circles {
     position: absolute;
     top: 0;
