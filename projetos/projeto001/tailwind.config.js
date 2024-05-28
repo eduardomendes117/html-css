@@ -4,10 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#ff6363',
-        secondary: '#1D64F2',
-        accent: '#011C40',
-        neutral: '#F2EED8',
+        //adicione cores
       },
 
       height: {
@@ -21,9 +18,11 @@ module.exports = {
   plugins: [require("daisyui")],
 
   daisyui: {
-    themes: false, // falso: apenas claro + escuro | verdadeiro: todos os temas | array: temas específicos como este ["light", "dark", "cupcake"]
+    themes: ["light", "dark"], // falso: apenas claro + escuro | verdadeiro: todos os temas | array: temas específicos como este ["light", "dark", "cupcake"]
 
     darkTheme: "dark", // nome de um dos temas incluídos para o modo escuro
+
+    lightTheme: "light",
 
     base: true, // aplica a cor de fundo e de primeiro plano ao elemento raiz por padrão
 

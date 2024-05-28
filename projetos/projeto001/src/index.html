@@ -19,7 +19,7 @@
     <header id="navbar" class="flex h-16 justify-between px-5">
         <a class="flex items-center text-2xl font-bold" href='#'>
             <div class="bg-blue-800 w-7 h-7 rounded-full mr-1"></div>
-            <div class="flex text-3xl">Eduardo</div>
+            <h1 class="flex text-3xl ligth">Eduardo</h1>
         </a>
 
         <div class="container mx-auto mt-3">
@@ -30,19 +30,19 @@
             <!-- Menu horizontal para dispositivos maiores -->
             <div class="hidden lg:flex justify-center">
                 <ul class="menu menu-horizontal bg-base-200 rounded-box">
-                <li><a>Tela Inicial</a></li>
-                <li><a>Sobre mim</a></li>
-                <li><a>Portifolio</a></li>
-                <li><a>Contato</a></li>
+                    <li><a>Tela Inicial</a></li>
+                    <li><a>Sobre mim</a></li>
+                    <li><a>Portifolio</a></li>
+                    <li><a>Contato</a></li>
                 </ul>
             </div>
             <!-- Menu vertical para dispositivos móveis -->
             <div id="mobile-menu" class="lg:hidden hidden justify-end">
                 <ul class="menu menu-vertical bg-base-200 rounded-box mt-2 w-max float-right">
-                <li><a>Tela Inicial</a></li>
-                <li><a>Sobre mim</a></li>
-                <li><a>Portifolio</a></li>
-                <li><a>Contato</a></li>
+                    <li><a>Tela Inicial</a></li>
+                    <li><a>Sobre mim</a></li>
+                    <li><a>Portifolio</a></li>
+                    <li><a>Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -78,7 +78,8 @@
     <!--Conteúdo-->
     <main>
         <!--Tela Inicial-->
-        <section id="Home" class="flex items-center justify-center h-700">
+        <section id="Home" class="flex flex-col items-center justify-between h-700 ">
+            <div class="null"></div>
             <div class="flex items-center justify-center flex-col">
                     <ul class="circles">
                             <li></li>
@@ -93,55 +94,59 @@
                             <li></li>
                     </ul>
                 <h1 class=" text-5xl text-center items-center flex gap-2 font-bold">Web
-                    <span class="typing-container font-bold mt-2" style="color: #9038FC;">Developer</span>
+                    <span class="typing-container font-bold" style="color: #9038FC;">Developer</span>
                 </h1>
-                <button type="button" class="btn btn-outline-primary m-16 text-2xl"><a href="#Contato">Contato</a></button>
+                <button type="button" class="btn btn-outline-primary m-16 rounded-full text-1xl "><a href="#Contato">Contato</a></button>
+            </div>
+
+            <div class="flex w-full" data-aos="fade-up" data-aos-easing="ease-in-out">
+                <div class="separador flex justify-end items-end flex-1"></div>
             </div>
         </section>
 
          <!-- Sobre Section -->
-        <section id="Sobre" class="container p-10 transition-colors duration-300 bg-slate-100 shadow-md mx-auto rounded-box max-w-screen-lg" data-aos="zoom-in">
+        <section id="Sobre" class="p-10 transition-colors duration-300 bg-white shadow-md w-full" data-aos="zoom-in">
             <div class="text-center">
-                <h2 class="text-4xl font-bold text-purple-700" data-aos="fade-up" data-aos-easing="ease-in-out">Sobre Mim</h2>
-            <p class="mt-4 text-black text-justify max-w-screen-sm mx-auto p-5" data-aos="fade-up" data-aos-easing="ease-in-out">Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Este é o lugar ideal para eu compartilhar um pouco do meu trabalho e minha jornada no mundo do desenvolvimento web</p>
+                <h2 class="text-5xl font-bold text-purple-700" data-aos="fade-up" data-aos-easing="ease-in-out">Sobre Mim</h2>
+                <p class="mt-4 text-black text-justify max-w-screen-sm mx-auto p-5 text-2xl" data-aos="fade-up" data-aos-easing="ease-in-out">Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Este é o lugar ideal para eu compartilhar um pouco do meu trabalho e minha jornada no mundo do desenvolvimento web</p>
+                <button class="btn text-white">Veja projetos</button>
             </div>
         </section>
 
         <!-- Projetos Section -->
-        <section id="Projeto" class="container mx-auto bg-secondary pb-8 rounded-box max-w-screen-lg mt-2">
+        <section id="Projeto" class="container bg-slate-900 mx-auto pb-8 w-full">
             <h1 class="text-center font-bold text-4xl p-10 text-white " data-aos="fade-up" data-aos-easing="ease-in-out">Meus projetos</h1>
-            <picture class="flex mx-auto w-72 m-10 mt-0" data-aos="fade-up" data-aos-easing="ease-in-out"><img src="../Imagens/banner-projetos.png" alt="" class="mx-auto"></picture>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-5 text-center">
+
                 <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="100">
                     <h2 class="text-2xl font-bold mb-2">Projeto 1</h2>
-                    <p>Descrição do projeto 1.</p>
                 </div>
+
                 <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="200">
                     <h2 class="text-2xl font-bold mb-2">Projeto 2</h2>
-                    <p>Descrição do projeto 2.</p>
                 </div>
+
                 <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="300">
                     <h2 class="text-2xl font-bold mb-2">Projeto 3</h2>
-                    <p>Descrição do projeto 3.</p>
                 </div>
+
                 <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="400">
                     <h2 class="text-2xl font-bold mb-2">Projeto 4</h2>
-                    <p>Descrição do projeto 4.</p>
                 </div>
+
                 <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="500">
                     <h2 class="text-2xl font-bold mb-2">Projeto 5</h2>
-                    <p>Descrição do projeto 5.</p>
                 </div>
+
                 <div class="bg-white p-6 rounded-box" data-aos="fade-up" data-aos-delay="600">
                     <h2 class="text-2xl font-bold mb-2">Projeto 6</h2>
-                    <p>Descrição do projeto 6.</p>
                 </div>
             </div>
             </div>
         </section>
 
         <!-- Contato Section -->
-        <section id="Contato" class="container mx-auto px-4 py-20 transition-colors duration-300 bg-accent max-w-screen-lg">
+        <section id="Contato" class="container mx-auto px-4 py-20 transition-colors duration-300 bg-primary w-full">
             <div class="text-center">
             <h2 class="text-3xl font-bold text-yellow-500">Contato</h2>
             <p class="mt-4">Entre em contato...</p>
@@ -150,15 +155,15 @@
             <form>
                 <div class="mb-4">
                 <label for="nome" class="block text-white">Nome</label>
-                <input type="text" id="nome" class="w-full px-4 py-2 border rounded-md" placeholder="Seu Nome">
+                <input type="text" id="nome" class="w-full px-4 py-2 border rounded-md dark:bg-slate-800" placeholder="Seu Nome">
                 </div>
                 <div class="mb-4">
                 <label for="email" class="block text-white">Email</label>
-                <input type="email" id="email" class="w-full px-4 py-2 border rounded-md" placeholder="Seu Email">
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-md dark:bg-slate-800" placeholder="Seu Email">
                 </div>
                 <div class="mb-4">
                 <label for="mensagem" class="block text-white">Mensagem</label>
-                <textarea id="mensagem" class="w-full px-4 py-2 border rounded-md" placeholder="Sua Mensagem"></textarea>
+                <textarea id="mensagem" class="w-full px-4 py-2 border rounded-md dark:bg-slate-800" placeholder="Sua Mensagem"></textarea>
                 </div>
                 <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Enviar</button>
             </form>
