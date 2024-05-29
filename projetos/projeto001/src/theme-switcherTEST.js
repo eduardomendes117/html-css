@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inicializar o tema com base na preferência do usuário
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    setTheme('dark');
+    button.checked = true;
   } else {
-    setTheme('light');
+    button.checked = false;
   }
 
   button.addEventListener('click', toggleTheme);

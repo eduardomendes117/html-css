@@ -8,12 +8,31 @@
     font-family: 'Poppins', sans-serif;
 }
 
+[data-theme="dark"] .bg-gray-100 {
+    background-color: #1a202c; /* substitua pela cor desejada para o tema escuro */
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: rgba(25, 30, 36, 0.9); /* substitua pela cor desejada para o tema escuro */
+}
+
+
+[data-theme="dark"] .bg-slate-900 {
+    background-color: black; /* substitua pela cor desejada para o tema escuro */
+}
+
+[data-theme="dark"] .text-black {
+    color: #edf2f7; /* substitua pela cor desejada para o tema escuro */
+}
+
+
+
 .separador {
     width: 100%;
-    height: 100px;
+    height: 10px;
     background-color: rgb(142, 58, 171);
     /*background: linear-gradient(to right, #6a11cb, #2575fc);*/
-    clip-path: polygon(0 70%, 0 100%, 100% 100%);
+    clip-path: polygon(0 50%, 0 100%, 100% 100%);
 }
 
 .typing-container {

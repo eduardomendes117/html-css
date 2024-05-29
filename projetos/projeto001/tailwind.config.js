@@ -9,7 +9,12 @@ module.exports = {
 
       height: {
         '700': '43.75rem',
-      }
+      },
+
+      backgroundImage: {
+        'iframe': "url('/imagens/iframe-image.png')",
+        'bio': "url('/imagens/link-bio-image.png')",
+      },
     },
     fontFamily: {
       'body': ['"Open Sans"',],
@@ -18,11 +23,9 @@ module.exports = {
   plugins: [require("daisyui")],
 
   daisyui: {
-    themes: ["light", "dark"], // falso: apenas claro + escuro | verdadeiro: todos os temas | array: temas específicos como este ["light", "dark", "cupcake"]
+    themes: ["false"], // falso: apenas claro + escuro | verdadeiro: todos os temas | array: temas específicos como este ["light", "dark", "cupcake"]
 
     darkTheme: "dark", // nome de um dos temas incluídos para o modo escuro
-
-    lightTheme: "light",
 
     base: true, // aplica a cor de fundo e de primeiro plano ao elemento raiz por padrão
 
