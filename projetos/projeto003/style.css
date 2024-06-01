@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+}
+
+main {
+    height: 100vh;   
+}
+
+/*iFrame*/
+#celular {
+    position: absolute;
+    width: 235px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tela {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    width: 235px;
+    height: 518px;
+    overflow: auto;
+}
+
+#iphone-png {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/*icons*/
+#icons-redes {
+    position: relative;
+    flex-direction: column;
+    top: 30%;
+    float: right;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    width: 100px;
+    padding: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.container:hover  {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    transition: 1s;
+}
+
+.container img {
+    width: 60px;
+    border-radius: 50%;
+}
