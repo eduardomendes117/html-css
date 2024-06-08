@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Internas</title>
+    <style>
+        @font-face {
+            font-family: 'Minha Fonte';
+             src: url('fonts/littlebird.ttf') format('truetype');
+             font-weight: normal;
+             font-style: normal;
+
+            /*
+              Tipos de format()
+              - openrype (otf)
+              - truetype (ttf)
+              - embedded-opentype
+              - truetype-aat (Apple Advanced Typophaphy)
+              - svg
+            */
+        }
+
+        body {
+            font-size: 15pt;
+        }
+
+        h1, p {
+            font-family: 'Minha Fonte', sans-serif; /* Fonte local importada da linha 9 até 12 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Fonte Interna</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatem suscipit, eligendi temporibus accusamus minus, et voluptas nisi nam doloribus provident aliquid blanditiis dicta, eveniet veniam at omnis mollitia quasi?</p>
+</body>
+</html>
