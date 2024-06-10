@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "npx tailwindcss build src/styles.css -o dist/styles.css next build"
+  },
+
   "devDependencies": {
     "tailwindcss": "^3.4.3"
   }
