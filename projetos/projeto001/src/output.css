@@ -819,26 +819,6 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.email-block:hover h1, .email-block h2, .email-block h3 {
-  display: none;
-}
-
-.email-block:hover {
-  background-color: yellow;
-}
-
-.email-block:active {
-  background-color: yellowgreen;
-}
-
-.email-block:hover h2, .email-block:active h3{
-  display: block;
-}
-
-.email-block:active h2{
-  display: none;
-}
-
 @media (min-width: 640px) {
   .sm\:w-28 {
     width: 7rem;
