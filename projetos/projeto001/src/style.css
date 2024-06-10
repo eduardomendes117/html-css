@@ -1,19 +1,11 @@
-.email-block:hover h1, .email-block h2, .email-block h3 {
+.email-block:active h1, .email-block h2{
     display: none;
-}
-
-.email-block:hover {
-    background-color: yellow;
 }
 
 .email-block:active {
     background-color: yellowgreen;
 }
 
-.email-block:hover h2, .email-block:active h3{
-    display: block;
-}
-
 .email-block:active h2{
-    display: none;
+    display: block;
 }
