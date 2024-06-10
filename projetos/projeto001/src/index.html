@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/react.ico" type="image/x-icon">
   <title>Frontend</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-center items-center  p-4 pt-52">
+        <section id="home" class="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-center items-center p-4 pt-52">
             <div>
                 <h2 class="text-white text-3xl md:text-2xl font-bold px-1">Olá, sou eduardo</h2>
                 <h1 class="text-6xl text-white font-bold md:text-8xl">Frontend <br> Developer</h1>
@@ -40,7 +40,7 @@
             </div>
         </section>
         <h1 class="font-bold text-5xl text-center py-5 sm:py-10">Tecnologias</h1>
-        <section id="skils" class="flex justify-center sm:gap-10 md:gap-10 gap-5 items-center bg-zinc-200 m-5 rounded-3xl sm:p-20 p-10">   
+        <section id="skils" class="flex justify-center sm:gap-10 md:gap-10 gap-5 items-center bg-zinc-200 m-5 rounded-3xl sm:p-20 p-10 shadow-lg">   
             <div>
                 <img src="../img/react.png" alt="" class="sm:w-32 w-20">
                 <h1 class="font-bold text-black pt-2 text-center">REACT</h1>
@@ -71,23 +71,17 @@
 
         <section id="contato" class="p-10 justify-center bg-purple-800 rounded-t-3xl">
             <h1 class="text-5xl text-center pb-10 text-white font-bold">Contato</h1>
-            
-            <form data-aos="fade-up" data-aos-easing="ease-in-out" class="m-auto aos-init aos-animate max-w-xl">
-                <p class="text-2xl py-5 pb-2 font-medium text-zinc-300">mande seu e-mail</p>
-                <div class="mb-4">
-                <label for="nome" class="block text-white">Nome</label>
-                <input type="text" id="nome" class="w-full px-4 py-2 border rounded-xl" placeholder="Seu Nome">
-                </div>
-                <div class="mb-4">
-                <label for="email" class="block text-white">Email</label>
-                <input type="email" id="email" class="w-full px-4 py-2 border rounded-xl" placeholder="Seu Email">
-                </div>
-                <div class="mb-4">
-                <label for="mensagem" class="block text-white">Mensagem</label>
-                <textarea id="mensagem" class="w-full px-4 py-2 border rounded-xl" placeholder="Sua Mensagem"></textarea>
-                </div>
-                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Enviar</button>
-            </form>
+            <div class="flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                  
+                <button class="email-block p-5 m-5 bg-white rounded-3xl max-w-screen-sm" onclick="Email()">
+                    <h1>contato@eduardo.gmail.com</h1> 
+                    <h2>Clique para copiar!!</h2> 
+                    <h3>Copiado com sucesso</h3>
+                </button>
+            </div>
         </section>
     </main>
     <hr>
@@ -104,5 +98,10 @@
             <a href=""><img src="https://icons.iconarchive.com/icons/pictogrammers/material/24/github-icon.png" width="32" height="32"></a>
         </nav>
     </footer>  
+    <script>
+        function Email() {
+            navigator.clipboard.writeText('contato@eduardo.com');
+        }
+    </script>
 </body>
 </html>
