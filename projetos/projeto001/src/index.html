@@ -65,8 +65,8 @@
         <section id="projetos" class="sm:py-20 py-10">
             <h1 class="font-bold text-5xl text-center py-5 sm:py-10">Projetos</h1>
             <div class="flex flex-col flex-wrap justify-center items-center m-5 sm:flex-row gap-10 text-center text-white">
-                <a href="https://eduardomendes117.github.io/html-css/projetos/projeto002/index.html" class="bg-purple-800 rounded-3xl flex items-center justify-center text-5xl"><img src="../img/Design sem nome (5).png" alt=""></p></a>
-                <a href="https://eduardomendes117.github.io/html-css/projetos/projeto003/index.html" class="bg-purple-800 rounded-3xl flex items-center justify-center text-5xl"><img src="../img/Design sem nome (6).png" alt=""></a>
+                <a href="https://eduardomendes117.github.io/html-css/projetos/projeto002/index.html" class="bg-purple-800 rounded-3xl flex items-center justify-center text-5xl" target="_blank"><img src="../img/Design sem nome (5).png" alt=""></p></a>
+                <a href="https://eduardomendes117.github.io/html-css/projetos/projeto003/index.html" class="bg-purple-800 rounded-3xl flex items-center justify-center text-5xl" target="_blank"><img src="../img/Design sem nome (6).png" alt=""></a>
             </div>
         </section>
 
@@ -77,10 +77,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                 </svg>
                   
-                <button class="email-block p-5 m-5 bg-white rounded-3xl max-w-screen-sm" onclick="Email()">
-                    <h1>contato@eduardo.gmail.com</h1> 
-                    <h2>Copiado com sucesso</h2>
-                </button>
+                <button id="email" class="email-block p-5 m-5 bg-white rounded-3xl max-w-screen-sm" onclick="Email()">contato@eduardo.com</button>
             </div>
         </section>
     </main>
@@ -102,6 +99,18 @@
         function Email() {
             navigator.clipboard.writeText('contato@eduardo.com');
         }
+
+        document.getElementById('email').addEventListener('mousedown', function() {
+        var botao = this;
+        botao.classList.add('ativo');
+        botao.textContent = 'Copiado'; // Altera o texto do botão
+
+        // Defina o tempo em milissegundos que você deseja que o estado dure
+        setTimeout(function() {
+            botao.classList.remove('ativo');
+            botao.textContent = 'contato@eduardo.com'; // Restaura o texto original
+        }, 1000);
+        });
     </script>
 </body>
 </html>
