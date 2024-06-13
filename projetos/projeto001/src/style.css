@@ -1,11 +1,3 @@
-.email-block:active h1, .email-block h2{
-    display: none;
-}
-
-.email-block:active {
-    background-color: yellowgreen;
-}
-
-.email-block:active h2{
-    display: block;
+.ativo {
+    background-color: yellowgreen;;
 }
