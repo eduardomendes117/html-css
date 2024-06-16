@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            padding-inline: 15px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header > h1, header > nav {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header > nav a {
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            height: 100vh;
+            background-color: rgba(95, 158, 160, 0.3);
+        }
+
+        #assuntos {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgba(122, 116, 108, 0.2);
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        article > h2 {
+            padding: 10px 0;
+            color: blue;
+        }
+
+        article > p {
+            padding: 10px 0;
+        }
+
+        article > aside {
+            background-color: rgba(127, 255, 212, 0.2);
+            color: rgb(0, 133, 250);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            width: max-content;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 255, 0.8);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Inicial</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes | Politica | Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, magni corporis neque repellendus tempore amet quo optio autem vel et quos rerum, totam quam non dolorum sapiente consequatur perferendis dolorem.</p>
+                <aside>
+                    Artigo de João
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Desemvolvido por CursoEmVideo</h3>
+    </footer>
+</body>
+</html>
