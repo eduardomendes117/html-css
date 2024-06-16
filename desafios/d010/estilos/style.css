@@ -1,15 +1,24 @@
-@charset "UFT-8";
+@charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: 'Android';
-    src: url(fontes/idroid.otf);
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
 }
 
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
 
-* {
-    text-decoration: none;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
 }
 
 body {
@@ -17,6 +26,10 @@ body {
     flex-direction: column;
     margin: 0;
     font-family: 'Open Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 picture img {
@@ -89,6 +102,7 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    color: var(--cor3);
 }
 
 main {
@@ -111,7 +125,7 @@ h2 {
     padding: 10px;
     font-family: 'Android';
     text-align: left;
-    background-image: linear-gradient(to right, #83e1ad, transparent);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
 }
 
 p {
@@ -120,41 +134,41 @@ p {
 }
 
 p span {
-    color: rgba(47, 168, 101, 0.7);
+    color: var(--cor4);
     font-weight: 700;
 }
 
 p a {
     font-weight: 600;
-    color: rgb(0, 255, 136);
+    color: var(--cor5);
+    background-color: var(--cor1); 
+    border-radius: 5px;
 }
 
 p a:hover {
-    background-color: #2EA262;
-    color: white;
-    border-radius: 20px;
+    text-decoration: underline;
 }
 
-.extra {
+#curiosidades {
     background-color: #E8F5EF;
     border-radius: 24px;
     margin-top: 20px;
     padding-bottom: 1px;
 }
 
-.extra-listas {
+.curiosidades-lista {
     display: flex;
     text-align: left;
     justify-content: center;
 }
 
-.extra h1 {
-    background-color: #2FA866;
+#curiosidades h1 {
+    background-color: var(--cor3);
     padding: 20px;
     border-radius: 24px 20px 0 0;
     color: white;
 }
-.extra p, ul {
+#curiosidades p, ul {
     padding: 0 20px;
     list-style: none;
 }
@@ -164,13 +178,13 @@ abbr {
 }
 
 footer {
-    background-color: #2EA262;
+    background-color: var(--cor3);
     text-align: center;
     font-weight: 600;
 }
 
-footer span {
-    color: rgb(49, 69, 0);
+footer > span {
+    color: var(--cor5);
 }
 
 footer a {
@@ -181,14 +195,4 @@ footer a:hover {
     background-color: white;
     color: black;
     border-radius: 20px;
-}
-
-@keyframes nav-animation {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
