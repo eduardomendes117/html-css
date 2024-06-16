@@ -68,7 +68,7 @@ section.image {
 
 section#img1 {
     background-image: url('../imagens/background001.jpg');
-    background-position: right center;
+    background-position: center center;
 }
 
 section#img2{
