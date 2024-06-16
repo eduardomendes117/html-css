@@ -66,8 +66,9 @@ section.image {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.3);
 }
 
-section#img1{
+section#img1 {
     background-image: url('../imagens/background001.jpg');
+    background-position: right center;
 }
 
 section#img2{
