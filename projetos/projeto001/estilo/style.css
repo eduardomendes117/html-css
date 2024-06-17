@@ -1,0 +1,232 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    /* Paleta de cores */
+    --cor1: #243E56;
+    --cor2: #385FFC;
+    --cor3: #574ABD;
+    --cor4: #8CA2FC;
+    --cor5: #38DBFC;
+    ---cor6: #8F38FC;
+
+    /* Fontes */
+    --font1:"Poppins", sans-serif;
+}
+
+/* Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Outros */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor2);
+    padding: 3em 0;
+    padding-inline: 6em;
+}
+
+header > .logo img, header > .menu{
+    width: 50px; 
+    background: none;
+    cursor: pointer; 
+    border: none;
+}
+
+/* Sections */
+section.home {
+    background-color: var(--cor2);
+    color: white;
+    padding: 10em 0;
+}
+
+section.home > h1 {
+    padding-inline: 2em;
+    font-size: 5em;
+    color: var(--cor5);
+}
+
+section.home > p {
+    padding-inline: 6.7em;
+    font-family: var(--font1);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section.home > .icons{
+    display: flex;
+    gap: 10px;
+    width: 100px;
+    margin-top: 1em;
+    margin-left: 10em;
+}
+
+section.home > .icons a {
+    width: 100px;
+}
+
+section.home > img {
+    position: absolute;
+    transform: translate( 130%, -110%);
+    padding-right: 6em;
+    float: right;
+}
+
+section.sobre > h2 {
+    font-weight: bold;
+    text-align: center;
+    padding: 1.1em;
+    padding-bottom: 0.4em;
+    font-size: 4em;
+    font-family: var(--font1);
+}
+
+section.sobre > p {
+    font-size: 1.6em;
+    font-weight: lighter;
+    text-align: justify;
+    padding-inline: 15em;
+    padding-bottom: 5em;
+}
+
+section.projetos {
+    padding: 2em;
+    background-color: var(--cor5);
+    font-size: 3em;
+    color: var(--cor2);
+}
+
+section.projetos > h2 {
+    text-align: center;
+    padding: 1em;
+}
+
+section.projetos > picture {
+    text-align: center;
+    display: block;
+    color: transparent;
+}
+
+section.projetos > picture a {
+    color: transparent;
+}
+
+section.projetos > picture a img {
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+footer > .icons { 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1em;
+}
+
+footer > .icons a {
+    width: 30px;
+}
+
+/* Celulares */
+@media (max-width:767px) {
+    header {
+        padding-inline: 1.6em;
+    }
+
+    section.home {
+        padding: 5em 0;
+    }
+
+    section.home > h1 {
+        font-size: 3em;
+        padding-inline: 0.4em;
+    }
+
+    section.home > p {
+        font-size: 1.2em;
+        padding-inline: 1em;
+    }
+
+    section.home > .icons {
+        margin-left: 1em;
+    }
+
+    section.home > img {
+        position: relative;
+        transform: translate( 0, 0);
+        padding-right: 0em;
+        padding-top: 5em;
+        width: 24em;
+        float: none;
+    }
+
+    section.sobre > h2 {
+        padding: 0.5em;
+        padding-top: 1em;
+        font-size: 3em;
+    }
+    
+    section.sobre > p {
+        font-size: 1.6em;
+        font-weight: lighter;
+        text-align: justify;
+        padding-inline: 1em;
+        padding-bottom: 4em;
+    }
+
+    section.projetos {
+        padding: 0.5em;
+        font-size: 2em;
+    }
+    
+    section.projetos > h2 {
+        padding: 0.5em;
+    }
+
+    section.projetos > picture a img {
+        width: 350px;
+    }
+
+}
+
+/* Tablets */
+@media (min-width:767px) and (max-width:1023px){ 
+    header {
+        padding-inline: 3em;
+    }
+
+    section.home > img {
+        position: relative;
+        transform: translate( 35%, 0);
+        padding-right: 0em;
+        padding-top: 5em;
+        width: 30em;
+        float: none;
+    }
+
+    section.sobre > p {
+        font-size: 1.6em;
+        padding-inline: 3em;
+        padding-bottom: 4em;
+    }
+}
