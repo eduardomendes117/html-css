@@ -159,7 +159,7 @@ footer > .icons a {
     }
 
     section.home > h1 {
-        font-size: 3em;
+        font-size: 2.9em;
         padding-inline: 0.4em;
     }
 
@@ -177,7 +177,7 @@ footer > .icons a {
         transform: translate( 0, 0);
         padding-right: 0em;
         padding-top: 5em;
-        width: 24em;
+        width: 23em;
         float: none;
     }
 
