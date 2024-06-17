@@ -150,6 +150,7 @@ footer > .icons a {
 /* Celulares */
 @media (max-width:767px) {
     header {
+        padding-top: 1.6em;
         padding-inline: 1.6em;
     }
 
