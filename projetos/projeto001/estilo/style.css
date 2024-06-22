@@ -24,11 +24,39 @@
     text-decoration: none;
 }
 
-html, body {
-    font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar {
+    display: non;
 }
 
+/* Estilo para navegadores baseados no WebKit */
+body::-webkit-scrollbar {
+    width: 16px; /* Largura da barra de rolagem */
+    height: 16px; /* Altura da barra de rolagem horizontal */
+}
+  
+body::-webkit-scrollbar-track {
+    background-color: transparent; /* Gradiente para o track */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor2); /* Cor do polegar */
+    border: 1px solid #fff; /* Cor de borda para polegar */
+}
+  
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor4); /* Cor do polegar quando em hover */
+}
+  
+body::-webkit-scrollbar-corner {
+    background: #1e90ff; /* Cor do canto da barra de rolagem */
+}
 
+  
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
 
 
 /* Outros */
@@ -60,9 +88,8 @@ header nav.active {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: white;
+    background-color: transparent;
     width: 100%;
-    height: 80vh;
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -70,7 +97,12 @@ header nav.active {
 }
 
 header .nav-list {
+    background-color: rgba(87, 74, 189, 0.8);
+    backdrop-filter: blur(20px);
     display: flex;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-around;
     gap: 32px;
@@ -82,12 +114,13 @@ header .nav-list {
     font-weight: bold;
     padding: 20px;
     border-radius: 10px;
-    color: var(--cor2);
+    color: white;
 }
 
 .nav-list li a:hover {
-    color: white;
-    background-color: var(--cor4);
+    transform: scale(2.0);
+    color: rgba(255, 255, 255, 0.7);
+    background-color: var(--cor2);
 }
 
 /* Sections */
@@ -99,6 +132,11 @@ section.home {
     background-color: var(--cor2);
     color: white;
     padding: 10em 0;
+}
+
+section.home > img:hover, section.sobre > img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-out;
 }
 
 section.home .texto > h1 {
@@ -132,20 +170,39 @@ section.home .texto > .icons a:hover {
     border-radius: 5px;
 }
 
-section.sobre > h2 {
+section.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    max-width: 1023px;
+    margin: auto;
+}
+
+section.sobre > img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding: 1em;
+}
+
+section.sobre .texto {
+    flex: 1;
+}
+
+section.sobre .texto > h2 {
     font-weight: bold;
-    text-align: center;
-    padding: 1.1em;
+    text-align: left;
+    padding: 1.0em;
     padding-bottom: 0.4em;
-    font-size: 4em;
+    font-size: 3em;
     font-family: var(--font1);
 }
 
-section.sobre > p {
+section.sobre > .texto > p {
     font-size: 1.6em;
     font-weight: lighter;
     text-align: justify;
-    padding-inline: 15em;
+    padding-inline: 1em;
     padding-bottom: 5em;
 }
 
@@ -175,10 +232,11 @@ section.projetos > picture a {
 
 section.projetos > picture a img {
     width: 550px;
+    transition: 0.2s ease-out;
 }
 
 section.projetos > picture a img:hover {
-   transform: scale(1.010);
+   transform: scale(1.05);
 }
 
 footer {
@@ -237,13 +295,13 @@ footer > .icons a {
         width: 23em;
     }
 
-    section.sobre > h2 {
+    section.sobre > .texto > h2 {
         padding: 0.5em;
         padding-top: 1em;
         font-size: 3em;
     }
     
-    section.sobre > p {
+    section.sobre > .texto > p {
         font-size: 1.6em;
         padding-inline: 1em;
         padding-bottom: 4em;
@@ -259,7 +317,7 @@ footer > .icons a {
     }
 
     section.projetos > picture a img {
-        width: 350px;
+        width: 100%;
     }
 
 }
