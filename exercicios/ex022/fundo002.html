@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.7);
+            font: 13pt Arial;
+            color: white;
+        }
+
+        div { 
+            width: 90%;
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 1em;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-size: 100px;
+        }
+
+        div#area001 {
+            background-repeat: repeat;
+        }
+
+        div#area002 {
+            background-repeat: repeat-x;
+        }
+
+        div#area003 {
+            background-repeat: repeat-y;
+        }
+
+        div#area004 {
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetições em background-image</h1>
+
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+    <div id="area001"></div>
+
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal.</p>
+    <div id="area002"></div>
+
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
+    <div id="area003"></div>
+
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
+    <div id="area004"></div>
+</body>
+</html>

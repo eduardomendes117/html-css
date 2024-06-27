@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento do Fundo</title>
+    <style>
+        
+        body {
+            background-color: rgba(0, 0, 255, 0.7);
+            font: 13pt Arial;
+            color: white;
+        }
+
+        div { 
+            width: 90%;
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 1em;
+            background-image: url('imagens/wallpaper003.jpg');
+        }
+
+        div#area001 {
+            background-position: left top;
+        }
+
+        div#area002 {
+            background-position: right bottom;
+        }
+
+        div#area003 {
+            background-position: center top;
+        }
+
+        div#area004 {
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posição de um background</h1>
+
+    <h2>background-position: left top;</h2>
+    <div id="area001"></div>
+    <h2>background-position: right bottom;</h2>
+    <div id="area002"></div>
+    <h2>background-position: center top;</h2>
+    <div id="area003"></div>
+    <h2>background-position: center center;</h2>
+    <div id="area004"></div>
+</body>
+</html>
