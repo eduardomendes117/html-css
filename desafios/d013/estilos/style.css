@@ -60,3 +60,9 @@ section#redes-sociais img:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
     transition: transform .3s, border 1s;
 }
+
+@media (max-width: 640px) {
+    section#telefone {
+        transform: scale(0.7) translate(-70%, -70%);
+    }
+}
