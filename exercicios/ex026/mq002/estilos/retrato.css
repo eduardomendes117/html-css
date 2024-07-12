@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Dispositivos em Modo Retrato */
+
+body {
+    background: url('../imagens/cev-portrait.jpg');
+    background-position: left bottom;
+}
