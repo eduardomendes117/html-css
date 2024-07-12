@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background:  url( ../imagens/back-mountain.jpg) no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+}

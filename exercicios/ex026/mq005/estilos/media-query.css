@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+
+@media screen and (min-width: 768px) { /* TABLET */
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        background-color: rgb(200, 200, 200);
+        margin: 5px;
+        border: none;
+    }
+
+    menu > ul > li > a {
+        padding: 10px;
+        
+    }
+
+    main {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 992px) { /* DESKTOP */
+    
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    
+}

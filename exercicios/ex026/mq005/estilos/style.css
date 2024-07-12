@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* Estilos para telas */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+header {
+    background-color: lightblue;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+i#burguer {
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    background-color: lightslategray;
+    color: white;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(160, 175, 175);
+}
+
+menu > ul > li {
+    border-top: 1px  solid lightblue;
+}
+
+menu > ul > li:hover {
+    background-color: gray;
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    color: white;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p { 
+    padding-bottom: 10px;
+}
