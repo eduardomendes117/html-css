@@ -3,37 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead, tbody > .media{
+            background-color: gray;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <section id="login">
-            <div id="imagem">
-                <!--Aqui vai a imagem-->
-            </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post" autocomplete="on">
-                    <div class="campo">
-                        <i class="material-icons">person</i>
-                        <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email" required maxlength="30">
-                    </div>
-                    <div class="campo">
-                        <i class="material-icons">lock</i>
-                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
-                        <label for="isenha">Senha</label>
-                    </div>
-                    <input type="submit" value="Entrar">
-                    <a href="esqueci.html" class="botao">
-                        Esqueci a senha <i class="material-icons">mail</i>
-                    </a>
-                </form>
-            </div>
-        </section>
-    </main>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Áreas</th>
+                <th rowspan="2">Diciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
