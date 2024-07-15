@@ -21,7 +21,8 @@
 
         .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-flow: row nowrap;
+            justify-content: center;
 
             background-color: white;
             border-radius: 20px;
@@ -29,16 +30,19 @@
 
         .container2 {
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
 
+            height: 200px;
             background-color: white;
             border-radius: 20px;
         }
 
         .item {
             color: white;
-
-            background-color: #080F86;
+            background-color: white;
+            border: 2px dashed black;
             width: 100px;
             height: 100px;
             border-radius: 20px;
@@ -48,7 +52,8 @@
     </style>
 </head>
 <body>
-    <h1>Flex-wrap</h1>
+    <h1>Justify Content</h1>
+    <h2>Alinhamento no eixo principal</h2>
 
     <div class="container">
         <div class="item">A</div>
@@ -58,8 +63,8 @@
         <div class="item">E</div> 
     </div>
 
-    <h1>Flex-flow</h1>
-    <h2>flex direction + flex wrap</h2>
+    <h1>Align items</h1>
+    <h2>Alinhamento no eixo transversal</h2>
 
     <div class="container2">
         <div class="item">A</div>
