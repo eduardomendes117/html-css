@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cfcfff;
+}
+
+h1 {
+    color: chocolate;
+}
+
+ul {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
