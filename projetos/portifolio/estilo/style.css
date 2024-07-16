@@ -23,35 +23,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
-::-webkit-scrollbar {
-    display: non;
-}
-
-/* Estilo para navegadores baseados no WebKit */
-body::-webkit-scrollbar {
-    width: 16px; /* Largura da barra de rolagem */
-    height: 16px; /* Altura da barra de rolagem horizontal */
-}
-  
-body::-webkit-scrollbar-track {
-    background-color: transparent; /* Gradiente para o track */
-    border-radius: 10px; /* Bordas arredondadas */
-}
-  
-body::-webkit-scrollbar-thumb {
-    background-color: var(--cor2); /* Cor do polegar */
-    border: 1px solid #fff; /* Cor de borda para polegar */
-}
-  
-body::-webkit-scrollbar-thumb:hover {
-    background-color: var(--cor4); /* Cor do polegar quando em hover */
-}
-  
-body::-webkit-scrollbar-corner {
-    background: #1e90ff; /* Cor do canto da barra de rolagem */
-}
-
   
 html, body {
     font-family: Arial, Helvetica, sans-serif;
@@ -59,13 +30,13 @@ html, body {
 }
 
 
-/* Outros */
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     background-color: var(--cor2);
-    padding: 3em 0;
-    padding-inline: 6em;
+    padding: 1em 0;
+    padding-inline: 2em;
 }
 
 header > .logo img, header > .menu-icon{
@@ -123,7 +94,7 @@ header .nav-list {
     background-color: var(--cor2);
 }
 
-/* Sections */
+/* Home */
 section.home {
     display: flex;
     justify-content: center;
@@ -131,7 +102,11 @@ section.home {
     align-items: center;
     background-color: var(--cor2);
     color: white;
-    padding: 10em 0;
+    padding: 5em 0;
+}
+
+section.home img {
+    width: 80%;
 }
 
 section.home > img:hover, section.sobre > img:hover {
@@ -141,14 +116,14 @@ section.home > img:hover, section.sobre > img:hover {
 
 section.home .texto > h1 {
     padding-inline: 2em;
-    font-size: 5em;
+    font-size: 3em;
     color: var(--cor5);
 }
 
 section.home .texto > p {
-    padding-inline: 6.7em;
+    padding-inline: 6em;
     font-family: var(--font1);
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -157,7 +132,8 @@ section.home .texto > .icons{
     gap: 10px;
     width: 100px;
     margin-top: 1em;
-    margin-left: 10em;
+    margin-left: 7em;
+    padding-bottom: 50px;
     
 }
 
@@ -170,17 +146,18 @@ section.home .texto > .icons a:hover {
     border-radius: 5px;
 }
 
+
+/* Sobre */
 section.sobre {
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
-    max-width: 1023px;
+    padding: 2em 0px 4em 0px;
+    max-width: 1200px;
     margin: auto;
 }
 
 section.sobre > img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     margin: auto;
     padding: 1em;
 }
@@ -192,56 +169,128 @@ section.sobre .texto {
 section.sobre .texto > h2 {
     font-weight: bold;
     text-align: left;
-    padding: 1.0em;
+    padding: 1em;
     padding-bottom: 0.4em;
-    font-size: 3em;
+    font-size: 2em;
+    color: #385FFC;
     font-family: var(--font1);
 }
 
 section.sobre > .texto > p {
-    font-size: 1.6em;
-    font-weight: lighter;
+    font-size: 1.1em;
+    font-weight: normal;
     text-align: justify;
-    padding-inline: 1em;
-    padding-bottom: 5em;
+    padding-inline: 2em;
+    padding-bottom: 2em;
 }
 
+
+/* Projetos */
 section.projetos {
-    padding: 2em;
+    background-color: #101010;
+    padding: 1em;
     font-size: 3em;
-    color: var(--cor2);
 }
 
 section.projetos > h2 {
-    text-align: center;
-    padding: 1em;
+    color: white;
+    width: max-content;
+    border-bottom: 5px solid blue;
+    font-size: 0.7em;
 }
 
-section.projetos > picture {
+section.projetos > p {
+    padding-top: 10px;
+    color: #385FFC;
+    font-size: 0.5em;
+}
+
+section.projetos > .flex {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 30px;
+}
+
+section.projetos > div .container-img {
+    background-color: #1D1D1D;
     text-align: center;
-    gap: 2em;
-    color: transparent;
+    margin-top: 40px;
+    padding: 30px 10px;
 }
 
-section.projetos > picture a {
-    color: transparent;
+section.projetos > div .container-img > img {
+    width: 100%;
 }
 
-section.projetos > picture a img {
-    width: 550px;
-    transition: 0.2s ease-out;
+section.projetos > div p {
+    position: relative;
+    top: 20px;
+    color: white;
+    font-size: 0.5em;
+    font-weight: bold;
 }
 
-section.projetos > picture a img:hover {
-   transform: scale(1.05);
+section.projetos > div a {
+    color: blue;
+    font-weight: bold;
+    font-size: 0.4em;
 }
 
+section.projetos > div a span {
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+section.projetos > div a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+
+/* Skils */
+section.skils {
+    padding: 50px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1C0051;
+    text-align: center;
+}
+
+section.skils h2 {
+    font-size: 2em;
+    padding-bottom: 30px;
+    color: White;
+    
+}
+
+section.skils > .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+section.skils > .cards > .box {
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    border-radius: 20px;
+    width: 7rem;
+    border-bottom: 5px solid blue;
+    background-color: #1D1D1D;
+}
+/* section.skils
+section.skils */
+
+/* Rodapé */
 footer {
     background-color: var(--cor3);
     color: white;
+    font-weight: bold;
     text-align: center;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -265,71 +314,5 @@ footer > .icons a {
 
     100% {
         height: 80vh;
-    }
-}
-
-
-/* Celulares */
-@media (max-width:767px) {
-    header {
-        padding-top: 1.6em;
-        padding-inline: 1.6em;
-    }
-
-    section.home .texto > h1 {
-        font-size: 2.9em;
-        padding-inline: 0.4em;
-    }
-
-    section.home .texto > p {
-        font-size: 1.2em;
-        padding-inline: 1em;
-    }
-
-    section.home .texto > .icons {
-        margin-left: 1em;
-    }
-
-    section.home > img {
-        padding-top: 5em;
-        width: 23em;
-    }
-
-    section.sobre > .texto > h2 {
-        padding: 0.5em;
-        padding-top: 1em;
-        font-size: 3em;
-    }
-    
-    section.sobre > .texto > p {
-        font-size: 1.6em;
-        padding-inline: 1em;
-        padding-bottom: 4em;
-    }
-
-    section.projetos {
-        padding: 0.5em;
-        font-size: 2em;
-    }
-    
-    section.projetos > h2 {
-        padding: 0.5em;
-    }
-
-    section.projetos > picture a img {
-        width: 100%;
-    }
-
-}
-
-/* Tablets */
-@media (min-width:767px) and (max-width:1023px){ 
-    header {
-        padding-inline: 3em;
-    }
-
-    section.home > img {
-        padding-top: 5em;
-        width: 30em;
     }
 }
