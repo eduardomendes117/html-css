@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (max-width: 600px) {
+    section.home h1 {
+        font-size: 3em;
+    }
+
+    section.home > img, section.sobre > img {
+        width: 70%;
+    }
+
+    section.projetos > div .container-img > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Pequenas Telas */
+@media screen and (min-width: 600px) {
+    section.home {
+        font-size: 2em;
+    }
+
+    section.home > img, section.sobre > img {
+        width: 70%;
+    }
+}
+
+/* Celular */
+@media screen and (min-width: 768px) {
+    section.home {
+        font-size: 1.8em;
+    }
+
+    section.home > img, section.sobre > img {
+        width: 60%;
+    }
+
+    section.sobre {
+        font-size: 1em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 992px) {
+    section.home {
+        font-size: 2em;
+    }
+
+    section.home > img, section.sobre > img {
+        width: 50%;
+    }
+
+    section.sobre {
+        font-size: 1.2em;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    section.home {
+        font-size: 2em;
+    }
+
+    section.home > img, section.sobre > img {
+        width: 50%;
+    }
+
+    section.sobre {
+        font-size: 1.3em;
+    }
+}
+
+/* Grandes Telas */
+@media screen and (min-width: 1500px) {
+    section.home {
+        padding: 100px;
+        font-size: 2.5em;
+    }
+
+    section.home > img, section.sobre > img {
+        width: 500px;
+    }
+
+    section.sobre {
+        font-size: 1.5em;
+    }
+}
