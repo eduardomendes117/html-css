@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 10px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 65px;
+    font-family: "Baloo Paaji 2", sans-serif;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+#home {
+    background: url(../imgs/header.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#home .overlay {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+
+#about
+
+#portfolio
+
+#contact
