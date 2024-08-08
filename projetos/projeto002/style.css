@@ -49,7 +49,7 @@ img#foto-perfil {
 }
 
 #texto {
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;
 }
 
@@ -80,10 +80,9 @@ img#foto-perfil {
     background-color: rgba(0, 0, 255, 0.188);
 }
 
-#links img {
+#links svg {
     float: left;
-    width: 30px;
-    border-radius: 50px;
+    fill: #fff;
 }
 
 @keyframes Aparecendo {
