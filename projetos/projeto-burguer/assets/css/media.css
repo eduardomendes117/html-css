@@ -1,25 +1,63 @@
-/* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
-/* // Sem media query para `xs`, já que este é o padrão, no Bootstrap. */
+@media only screen and (max-width: 1024px) {
+  nav {
+    max-width: 98%;
+  }
 
-/* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
-@media (min-width: 576px) {
-    .menu-cards {
-        width: 670px;
-        flex-direction: row;
-    }
+  header button {
+    display: none;
+  }
 }
 
-/* Dispositivos médios (tablets com 768px ou mais) */
-@media (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  nav {
+    max-width: 100%;
+  }
 }
 
- /* Dispositivos large (desktops com 992px ou mais) */
-@media (min-width: 992px) {
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 85%;
+  }
+
+  li {
+    padding: 1rem 1.1rem;
+  }
+
+  .menu {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .nav li {
+    padding: 20px;
+    
 }
 
- /* Dispositivos extra large (desktops grandes com 1200px ou mais) */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1460px;
-    }
+.nav li a {
+    font-size: 2rem;
+}
+
+  ul {
+    background-color: #161515;
+    width: 100%;
+    height: calc(100vh - 110px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: 8rem;
+    left: -100%;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+    transition: all 0.3s ease;
+  }
 }
