@@ -46,7 +46,7 @@
   ul {
     background-color: #161515;
     width: 100%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 100px);
     position: absolute;
     display: flex;
     flex-direction: column;
