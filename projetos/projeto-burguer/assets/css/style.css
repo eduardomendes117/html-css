@@ -11,16 +11,16 @@ body {
 
 /*navbar */
 .header {
+  background-color: #EFEFEF;
   padding: 20px 35px 0px;
   backdrop-filter: blur(10px);
-  background-color: #161515;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
+  max-width: 1940px;
   margin: auto;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .nav .logo a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -49,7 +49,7 @@ ul {
 }
 
 .nav li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: normal;
@@ -71,8 +71,8 @@ li a:hover {
 }
 
 .nav button a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-size: 1.3rem;
 }
 
@@ -87,13 +87,14 @@ li a:hover {
 
 /* section home */
 .home {
+  background-color: #EFEFEF;
   text-align: center;
-  background-color: #161515;
   padding-top: 30px;
 }
 
 .home img {
-  max-width: 99%;
+  margin: auto;
+  width: 99%;
   border-radius: 15px;
   vertical-align: sub;
 }
@@ -101,9 +102,13 @@ li a:hover {
 
 /* section menu */
 .section-menu {
-  padding: 100px 20px;
-  background-color: #161515;
-  color: #fff;
+  background-color: #EFEFEF;
+  padding: 20px 0;
+  color: black;
+}
+
+.section-menu h1 {
+  color: red;
 }
 
 .section-menu .seach {
@@ -116,7 +121,8 @@ li a:hover {
   padding: 10px;
   border-radius: 20px;
   background-color: #fff;
-  margin-bottom: 50px;
+  border: 1px solid rgb(238, 239, 243);
+  margin-bottom: 20px;
 }
 
 .section-menu .seach button {
@@ -140,8 +146,13 @@ li a:hover {
 
 .categorias .btn {
   padding: 10px;
+  margin: 4px;
+  background-color: rgba(255, 123, 0, 0.8);
+  border-radius: 25px;
+}
+
+.categorias .btn:hover {
   background-color: red;
-  border-radius: 20px;
 }
 
 .section-menu h1 {
@@ -158,16 +169,19 @@ li a:hover {
 }
 
 .menu-cards {
-  background-color: rgb(26, 26, 26);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   border-radius: 20px;
-  padding: 10px;
+  padding: 40px 20px;
   max-width: 900px;
 
   display: flex;
   align-items: center;
   flex: auto;
   gap: 20px;
+}
+
+.menu-cards:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .menu-cards img {
@@ -186,6 +200,7 @@ li a:hover {
 
 .menu-cards .btn {
   background-color: #ff7b00;
+  padding: 8px 40px;
   border-radius: 20px;
   font-size: 1.4rem;
   border: none;
@@ -215,7 +230,13 @@ li a:hover {
 
 /* footer */
 footer {
-  background-color: #161515;
+  background-color: #ff8a1d;
+  
+}
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
   padding: 55px 30px;
   align-items: center;
   justify-content: space-around;
@@ -223,31 +244,31 @@ footer {
   gap: 30px;
 }
 
-footer .contato, 
-footer .social {
+.footer .contato, 
+.footer .social {
   padding: 10px;
 }
 
-footer .contato span, 
-footer .social span {
+.footer .contato span, 
+.footer .social span {
   color: red;
-  fill: red;
+  fill: rgb(255, 0, 0);
 }
 
-footer .contato a {
+.footer .contato a {
   padding-bottom: 5px;
 }
 
-footer .contato a, 
-footer .social a {
-  color: #fff;
+.footer .contato a, 
+.footer .social a {
+  color: #EFEFEF;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-footer .contato a:hover,
-footer .social a:hover {
+.footer .contato a:hover,
+.footer .social a:hover {
   text-decoration: none;
 }
 
