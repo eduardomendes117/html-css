@@ -1,20 +1,34 @@
 /* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
 /* // Sem media query para `xs`, já que este é o padrão, no Bootstrap. */
+@media (max-width: 575px) {
+  .menu-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+}
 
 /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
 @media (min-width: 576px) {
-  .menu-cards {
-    width: 670px;
-    flex-direction: row;
-  }
+  .menu-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 /* Dispositivos médios (tablets com 768px ou mais) */
 @media (min-width: 768px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 /* Dispositivos large (desktops com 992px ou mais) */
 @media (min-width: 992px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 /* Dispositivos extra large (desktops grandes com 1200px ou mais) */
@@ -23,7 +37,15 @@
     max-width: 1460px;
   }
 
-  .home img {
-    max-width: 1440px;
+  .menu-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
 }
+
+@media (min-width: 1500px) {
+  .menu-container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  }
 }

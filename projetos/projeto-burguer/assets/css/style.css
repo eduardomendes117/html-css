@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ body {
 
 /*navbar */
 .header {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 20px 35px 0px;
   backdrop-filter: blur(10px);
 }
@@ -20,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1940px;
+  max-width: 1240px;
   margin: auto;
 }
 
@@ -49,10 +51,10 @@ ul {
 }
 
 .nav li a {
-  color: black;
+  color: #333;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: normal;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
   letter-spacing: 0.7px;
 }
 
@@ -87,22 +89,29 @@ li a:hover {
 
 /* section home */
 .home {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   text-align: center;
   padding-top: 30px;
 }
 
+.home .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 .home img {
+  max-width: 100%;
   margin: auto;
-  width: 99%;
-  border-radius: 15px;
+  border-radius: 12px;
   vertical-align: sub;
 }
 /* end section home */
 
 /* section menu */
 .section-menu {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 20px 0;
   color: black;
 }
@@ -130,7 +139,6 @@ li a:hover {
   border-radius: 20px;
 }
 
-
 .section-menu .seach .form-control:focus {
   box-shadow: none;
 }
@@ -144,15 +152,15 @@ li a:hover {
   gap: 10px;
 }
 
-.categorias .btn {
+.categorias .item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   margin: 4px;
-  background-color: rgba(255, 123, 0, 0.8);
+  width: 500px;
+  height: 250px;
   border-radius: 25px;
-}
-
-.categorias .btn:hover {
-  background-color: red;
 }
 
 .section-menu h1 {
@@ -161,22 +169,21 @@ li a:hover {
 }
 
 .section-menu .menu-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 30px 0px;
-  gap: 30px;
+  width: 100%;
+
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .menu-cards {
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 40px 20px;
   max-width: 900px;
 
   display: flex;
   align-items: center;
-  flex: auto;
   gap: 20px;
 }
 
@@ -206,8 +213,6 @@ li a:hover {
   border: none;
 }
 
-
-
 .card-text h2,
 .card-text span {
   color: rgb(255, 94, 0);
@@ -226,12 +231,9 @@ li a:hover {
   font-size: 1.4rem;
 }
 
-
-
 /* footer */
 footer {
   background-color: #ff8a1d;
-  
 }
 
 .footer {
@@ -244,12 +246,12 @@ footer {
   gap: 30px;
 }
 
-.footer .contato, 
+.footer .contato,
 .footer .social {
   padding: 10px;
 }
 
-.footer .contato span, 
+.footer .contato span,
 .footer .social span {
   color: red;
   fill: rgb(255, 0, 0);
@@ -259,9 +261,9 @@ footer {
   padding-bottom: 5px;
 }
 
-.footer .contato a, 
+.footer .contato a,
 .footer .social a {
-  color: #EFEFEF;
+  color: #efefef;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -271,6 +273,5 @@ footer {
 .footer .social a:hover {
   text-decoration: none;
 }
-
 
 /* end footer */
