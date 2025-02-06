@@ -14,4 +14,4 @@ Este repositório contém os projetos e exercícios realizados durante o curso d
 
 1. Clone este repositório para o seu computador:
    ```bash
-   git clone https://github.com/seu-usuario/curso-html-css.git
+   git clone https://github.com/eduardomendes117/html-css.git
